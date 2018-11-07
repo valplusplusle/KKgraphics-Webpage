@@ -1,0 +1,185 @@
+html::before  {
+	content: ' ';
+  	display: block;
+	background: url(./img/background.jpg);
+  	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: -10;
+}
+
+.main {
+	position: relative;
+	width: 90%;
+	background-color: rgba(0, 0, 0, 0.3);
+	margin: auto;
+	margin-top: 30px;
+    animation: fadein 5s;
+    overflow: hidden;
+}
+
+.headline{
+	height: 400px;
+	width:100%;
+	animation: fadein 3s;
+	font-family: "Amatic SC"; 
+	text-align: center;
+	color:white;
+	vertical-align: middle;
+}
+
+.icontext{
+	margin: auto;
+	vertical-align: middle;
+	width: 80%;
+	max-width: 1000px;
+	animation: text 3s;
+	position: absolute;
+	top: 200px;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	line-height: 0.7;
+  	box-shadow: inset 0 0 0 15px #53a7ea;
+  	font-size: 40px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 600; 
+}
+
+.input{
+	float: left;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.beitrag{
+	height: 100%;
+	width: 25%;
+	background-position: center;
+	background-size: cover;
+	font-family: "Amatic SC"; 
+	font-size: 40px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 600; 
+	text-align: center;
+	color:white;
+	float:left;
+}
+
+.beitrag:hover{
+	transform: scale(1.03);
+}
+
+.bg1 {
+		background-image: url(./img/webdesign.jpg);
+		animation: bottomfly 3s;
+}
+
+.bg2 {
+		background-image: url(./img/security.jpg);
+		animation: topfly 3s;
+}
+
+.bg3 {
+		background-image: url(./img/kamera.jpg);
+		animation: bottomfly 3s;
+}
+
+.bg4 {
+		background-image: url(./img/seminare.jpg);
+		animation: topfly 3s;
+}
+
+.context {
+	margin-top: 500px;
+}
+
+.beitragFett {
+	background-color: rgba(0, 0, 0, 0.3);
+	margin: auto;
+	padding: 15px;
+	font-family: "Lato"; 
+	font-size: 20px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 600; 
+	color:white;
+}
+.beitragFett:hover{
+		background-color: rgba(0, 0, 0, 0.8);
+}
+.webdesign{
+	text-align: left;
+}
+.sicherheit{
+	text-align: right;
+}
+.kameras{
+	text-align: left;
+}
+.seminare{
+	text-align: right;
+}
+
+.kontakt {
+	background-color: rgba(83, 167, 234, 0.5);
+	margin: auto;
+	font-family: "Amatic SC"; 
+	font-size: 30px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 600; 
+	color:white;
+	float: left;
+	width: 100%;
+}
+#right{
+	float:right;
+	margin-right: 15px;
+}
+#links{
+	float:left;
+	margin-left:15px;
+}
+
+.responsiveContainer {
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsiveContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Animationen: */
+
+@keyframes topfly{
+    from { margin-top: -70px; opacity: 0;}
+    to   { margin-top: 0px; opacity: 1;}
+}
+@keyframes bottomfly{
+    from { margin-top: 70px; opacity: 0;}
+    to   { margin-top: 0px; opacity: 1;}
+}
+
+@keyframes text {
+    from { box-shadow: inset 0 0 0 0px #53a7ea; opacity: 0; }
+    to   { box-shadow: inset 0 0 0 15px #53a7ea; opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
