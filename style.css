@@ -13,6 +13,41 @@ html::before  {
 	z-index: -10;
 }
 
+.sys_contact {
+  display:scroll;
+  position:fixed;
+  background-color: #53a7ea;
+  background-position: 0px 0px;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  animation: leftfly 3s;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5px;
+  transition: width 1s;
+}
+
+.sys_contact:hover{
+width: 100px;
+}
+
+.sys_phone {
+  top:150px;
+  left:0px;
+}
+
+.sys_mail {
+  top:205px;
+  left:0px;
+}
+
+.sys_map {
+  top:260px;
+  left:0px;
+}
+
 .link-no-decoration:link, .link-no-decoration:visited {
     color: white;
     padding: 14px 25px;
@@ -230,6 +265,12 @@ div#slider figure {
     from { margin-top: -70px; opacity: 0;}
     to   { margin-top: 0px; opacity: 1;}
 }
+
+@keyframes leftfly{
+    from { left: -60px; opacity: 0;}
+    to   { left: 0px; opacity: 1;}
+}
+
 @keyframes bottomfly{
     from { margin-top: 70px; opacity: 0;}
     to   { margin-top: 0px; opacity: 1;}
