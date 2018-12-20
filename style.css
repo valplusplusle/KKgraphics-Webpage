@@ -29,7 +29,7 @@ html::before  {
 	height: 400px;
 	width:100%;
 	animation: fadein 3s;
-	font-family: "Amatic SC"; 
+	font-family: "Lato"; 
 	text-align: center;
 	color:white;
 	vertical-align: middle;
@@ -66,7 +66,7 @@ html::before  {
 	width: 25%;
 	background-position: center;
 	background-size: cover;
-	font-family: "Amatic SC"; 
+	font-family: "Lato"; 
 	font-size: 40px; 
 	font-style: normal; 
 	font-variant: normal; 
@@ -135,7 +135,7 @@ html::before  {
 .referenzen {
 	background-color: rgba(83, 167, 234, 0.5);
 	margin: auto;
-	font-family: "Amatic SC"; 
+	font-family: "Lato"; 
 	font-size: 30px; 
 	font-style: normal; 
 	font-variant: normal; 
@@ -195,7 +195,7 @@ width: 100px;
 .kontakt {
 	background-color: rgba(83, 167, 234, 0.5);
 	margin: auto;
-	font-family: "Amatic SC"; 
+	font-family: "Lato"; 
 	font-size: 30px; 
 	font-style: normal; 
 	font-variant: normal; 
