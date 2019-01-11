@@ -191,6 +191,11 @@ width: 100px;
   left:0px;
 }
 
+.sys_faq {
+  top:315px;
+  left:0px;
+}
+
 /* Kontakt + Map bereich: */
 .kontakt {
 	background-color: rgba(83, 167, 234, 0.5);
