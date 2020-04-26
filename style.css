@@ -1,8 +1,26 @@
+/* latin-ext */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+/* latin */
+@font-face {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* only for backgroundimage: */
 html::before  {
 	content: ' ';
   	display: block;
-	background: url(./img/background.jpg);
-  	background-position: center;
+	background: url(./img/bg.jpg);
+  	background-position: top;
 	background-size: cover;
 	height: 100vh;
 	width: 100vw;
@@ -13,149 +31,91 @@ html::before  {
 	z-index: -10;
 }
 
-.main {
-	position: relative;
-	width: 90%;
-	max-width: 1200px;
-	background-color: rgba(0, 0, 0, 0.3);
-	margin: auto;
-	margin-top: 30px;
-    animation: fadein 5s;
-    overflow: hidden;
+.spacer {
+	margin-bottom:30px;
 }
 
-/* Kopfbereich (Logo): */
+.spacerlong {
+	margin-bottom:80px;
+}
+
+/* animation of infocards: */
+.fly {
+	animation: bottomfly 3s;
+}
+
+@keyframes bottomfly{
+    from { margin-top: 70px; opacity: 0;}
+    to   { margin-top: 0px; opacity: 1;}
+}
+
+/* headline on the top of the page: */
+.blueText {
+	color: #53a7ea;
+	font-size: 70px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 600; 
+}
+
+.textWhite {
+	color: white;
+}
+
 .headline{
-	height: 400px;
+	height: 200px;
 	width:100%;
+	margin: auto;
+	max-width: 1000px;
 	animation: fadein 3s;
 	font-family: "Lato"; 
 	text-align: center;
 	color:white;
 	vertical-align: middle;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 45vh;
+    margin-top: 25vh;
+}
+
+.headline_secondpage{
+	height: 200px;
+	width:100%;
+	margin: auto;
+	max-width: 1000px;
+	animation: fadein 3s;
+	font-family: "Lato"; 
+	text-align: center;
+	color:white;
+	vertical-align: middle;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.spanBackground {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .icontext{
+	min-height: 180px;
 	margin: auto;
 	vertical-align: middle;
 	width: 80%;
 	max-width: 1000px;
 	animation: text 3s;
-	position: absolute;
-	top: 200px;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
   	line-height: 0.7;
-  	box-shadow: inset 0 0 0 15px #53a7ea;
   	font-size: 40px; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 600; 
 }
 
-/* Beitragsvorschau: */
-.input{
-	float: left;
-	width: 100%;
-	height: 500px;
-	overflow: hidden;
-}
-
-.beitrag{
-	height: 100%;
-	width: 25%;
-	background-position: center;
-	background-size: cover;
-	font-family: "Lato"; 
-	font-size: 40px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 600; 
-	text-align: center;
-	color:white;
-	float:left;
-}
-
-.beitrag:hover{
-	transform: scale(1.03);
-}
-
-.bg1 {
-		background-image: url(./img/webdesign.jpg);
-		animation: bottomfly 3s;
-}
-
-.bg2 {
-		background-image: url(./img/security.jpg);
-		animation: topfly 3s;
-}
-
-.bg3 {
-		background-image: url(./img/kamera.jpg);
-		animation: bottomfly 3s;
-}
-
-.bg4 {
-		background-image: url(./img/seminare.jpg);
-		animation: topfly 3s;
-}
-
-.context {
-	margin-top: 500px;
-}
-
-/* Beitragsbereich: */
-.beitragFett {
-	background-color: rgba(0, 0, 0, 0.3);
-	margin: auto;
-	padding: 15px;
-	font-family: "Lato"; 
-	font-size: 20px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 600; 
-	color:white;
-}
-.beitragFett:hover{
-		background-color: rgba(0, 0, 0, 0.8);
-}
-.webdesign{
-	text-align: left;
-}
-.sicherheit{
-	text-align: right;
-}
-.kameras{
-	text-align: left;
-}
-.seminare{
-	text-align: right;
-}
-
-.referenzen {
-	background-color: rgba(83, 167, 234, 0.5);
-	margin: auto;
-	font-family: "Lato"; 
-	font-size: 30px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 600; 
-	color:white;
-	float: left;
-	width: 100%;
-	height: 100%;
-	max-height: 600px;
-	overflow: hidden;
-}
-
-.footer {
-	font-family: "Lato"; 
-	font-size: 19px; 
-	color:white;
-	text-align: center;
-}
-
-/* Kontakt Icons: */
+/* contact icons: */
 .sys_contact {
   display:scroll;
   position:fixed;
@@ -196,102 +156,56 @@ width: 100px;
   left:0px;
 }
 
-/* Kontakt + Map bereich: */
-.kontakt {
-	background-color: rgba(83, 167, 234, 0.5);
-	margin: auto;
-	font-family: "Lato"; 
-	font-size: 30px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 600; 
-	color:white;
-	float: left;
-	width: 100%;
-	padding: 10px;
+/* headline on the top of the page: */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
-#right{
-	float:right;
-	margin-right: 15px;
-}
-#left{
-	float:left;
-	margin-left:15px;
-}
-
-/* GoogleMAP Container: */
-.responsiveContainer {
+.flip-card-inner {
   position: relative;
-  padding-bottom: 50%;
-  height: 0;
-  overflow: hidden;
-}
-
-.responsiveContainer iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-/* Allgemeine Design Variablen: */
-.link-no-decoration:link, .link-no-decoration:visited {
-    color: white;
-    padding: 14px 25px;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-/* Slideshow: */
-div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; }
-div#slider figure { 
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite; 
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
-@keyframes slidy {
-0%		{ left: 0%;	}
-20% 	{ left: 0%;	}
-25% 	{ left: -100%; }
-45% 	{ left: -100%; }
-50% 	{ left: -200%; }
-70% 	{ left: -200%; }
-75% 	{ left: -300%; }
-95% 	{ left: -300%; }
-100%	{ left: -400%; }
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
 }
 
-/* Animationen: */
-@keyframes topfly{
-    from { margin-top: -70px; opacity: 0;}
-    to   { margin-top: 0px; opacity: 1;}
+.flip-card-back {
+  background-color: #53a7ea;
+  color: white;
+  transform: rotateY(180deg);
 }
 
-@keyframes leftfly{
-    from { left: -60px; opacity: 0;}
-    to   { left: 0px; opacity: 1;}
+.jumptronwithspace {
+	margin-right:15px;
+	margin-left:15px;
+	margin-top: 80px;
 }
 
-@keyframes bottomfly{
-    from { margin-top: 70px; opacity: 0;}
-    to   { margin-top: 0px; opacity: 1;}
+.flipspacerbottom {
+	margin-bottom:20px;
 }
 
-@keyframes text {
-    from { box-shadow: inset 0 0 0 0px #53a7ea; opacity: 0; }
-    to   { box-shadow: inset 0 0 0 15px #53a7ea; opacity: 1; }
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.flipspacertop {
+	margin-top:10px;
 }
