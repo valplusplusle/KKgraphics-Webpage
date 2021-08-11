@@ -57,7 +57,7 @@ html::before  {
 /* headline on the top of the page: */
 .blueText {
 	color: #53a7ea;
-	font-size: 70px; 
+	font-size: larger; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 600; 
@@ -118,6 +118,7 @@ html::before  {
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 600; 
+	padding-top: 15px;
 }
 
 /* contact icons: */
