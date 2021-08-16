@@ -41,7 +41,7 @@ html::before  {
 }
 
 .spacerlong {
-	margin-bottom:80px;
+	margin-bottom:20px;
 }
 
 /* animation of infocards: */
@@ -68,7 +68,7 @@ html::before  {
 }
 
 .headline{
-	height: 200px;
+	height: 250px;
 	width:100%;
 	margin: auto;
 	max-width: 1000px;
@@ -243,3 +243,15 @@ width: 100px;
 	-webkit-animation: downarrow 0.6s infinite alternate ease-in-out;
 	border-top:2em solid #53a7ea;
 }  
+
+@media only screen and (max-width: 992px) {
+	.videoText {
+		top: 0 !important;
+		right: unset !important;
+		left: unset !important;
+	  	width: inherit !important;
+	 	height: 100% !important;
+		max-width: unset !important;
+		margin: auto;
+	}
+  }
