@@ -72,7 +72,6 @@ html::before  {
 	width:100%;
 	margin: auto;
 	max-width: 1000px;
-	animation: fadein 3s;
 	font-family: "Lato"; 
 	text-align: center;
 	color:white;
@@ -87,7 +86,6 @@ html::before  {
 	width:100%;
 	margin: auto;
 	max-width: 1000px;
-	animation: fadein 3s;
 	font-family: "Lato"; 
 	text-align: center;
 	color:white;
